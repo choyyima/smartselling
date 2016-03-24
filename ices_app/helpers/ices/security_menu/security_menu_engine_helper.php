@@ -48,16 +48,16 @@ class Security_Menu_Engine {
                                 "properties" => array("class" => "fa fa-th")
                                 , "ref" => $ices_app_base_url . "security_controller"
                             ),
-                            Lang::get("Component") => array(
-                                'id' => 's_s_cmp',
-                                "properties" => array("class" => "fa fa-th")
-                                , "ref" => $ices_app_base_url . "security_component"
-                            ),
-                            Lang::get("Backup") => array(
-                                'id' => 's_s_b',
-                                "properties" => array("class" => "fa fa-th")
-                                , "ref" => $ices_app_base_url . "sys_backup"
-                            )
+//                            Lang::get("Component") => array(
+//                                'id' => 's_s_cmp',
+//                                "properties" => array("class" => "fa fa-th")
+//                                , "ref" => $ices_app_base_url . "security_component"
+//                            ),
+//                            Lang::get("Backup") => array(
+//                                'id' => 's_s_b',
+//                                "properties" => array("class" => "fa fa-th")
+//                                , "ref" => $ices_app_base_url . "sys_backup"
+//                            )
                         )
                     )
                 )
