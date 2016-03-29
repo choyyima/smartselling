@@ -10,22 +10,76 @@ class ICES_Engine {
         //<editor-fold defaultstate="collapsed">
         self::$company_list = array(
             array(
-                'val'=>'aryana',
+                'val'=>'restorant',
                 'app'=>array(
                     //<editor-fold defaultstate="collapsed">
                     array(
-                        'val'=>'Restaurant',
-                        'text'=>'Restaurant',
-                        'dev_text'=>'Restaurant',
-                        'short_name'=>'Restaurant',
-                        'app_base_url'=>get_instance()->config->base_url().'Restaurant/',
+                        'val'=>'administration',
+                        'text'=>'Administration',
+                        'dev_text'=>'Administration',
+                        'short_name'=>'Administration',
+                        'app_base_url'=>get_instance()->config->base_url().'administration/',
                         'app_icon_img'=>get_instance()->config->base_url().'libraries/img/ices/cutlery.png',
-                        'app_base_dir'=>'Restaurant/',
-                        'app_db_conn_name'=>'Restaurant',
+                        'app_base_dir'=>'Administration/',
+                        'app_db_conn_name'=>'Administration',
                         'app_translate'=>true,
-                        'app_default_url'=>get_instance()->config->base_url().'Restaurant/dashboard',
+                        'app_default_url'=>get_instance()->config->base_url().'Administration/dashboard',
                         'app_theme'=>'AdminLTE',
-                        'app_db_lock_name'=>'Restaurant',
+                        'app_db_lock_name'=>'administration',
+                        'app_db_lock_limit'=>10,
+                        'non_permission_controller'=>array(),
+                        'app_info'=>''
+                    ),
+                    
+                    array(
+                        'val'=>'management',
+                        'text'=>'Management',
+                        'dev_text'=>'Management',
+                        'short_name'=>'Management',
+                        'app_base_url'=>get_instance()->config->base_url().'management/',
+                        'app_base_dir'=>'management/',
+                        'app_db_conn_name'=>'management',
+                        'app_translate'=>false,
+                        'app_default_url'=>get_instance()->config->base_url().'management/dashboard',
+                        'app_icon_img'=>get_instance()->config->base_url().'libraries/img/ices/aryana_phone_book.png',
+                        'app_theme'=>'AdminLTE',
+                        'app_db_lock_name'=>'management',
+                        'app_db_lock_limit'=>10,
+                        'non_permission_controller'=>array(),
+                        'app_info'=>''
+                    ),
+                    
+                    array(
+                        'val'=>'cashier',
+                        'text'=>'Cashier',
+                        'dev_text'=>'Cashier',
+                        'short_name'=>'Cashier',
+                        'app_base_url'=>get_instance()->config->base_url().'cashier/',
+                        'app_base_dir'=>'cashier/',
+                        'app_db_conn_name'=>'cashier',
+                        'app_translate'=>false,
+                        'app_default_url'=>get_instance()->config->base_url().'cashier/dashboard',
+                        'app_icon_img'=>get_instance()->config->base_url().'libraries/img/ices/aryana_phone_book.png',
+                        'app_theme'=>'AdminLTE',
+                        'app_db_lock_name'=>'cashier',
+                        'app_db_lock_limit'=>10,
+                        'non_permission_controller'=>array(),
+                        'app_info'=>''
+                    ),
+                    
+                    array(
+                        'val'=>'accounting',
+                        'text'=>'Accounting',
+                        'dev_text'=>'Accounting',
+                        'short_name'=>'Accounting',
+                        'app_base_url'=>get_instance()->config->base_url().'accounting/',
+                        'app_base_dir'=>'cashier/',
+                        'app_db_conn_name'=>'cashier',
+                        'app_translate'=>false,
+                        'app_default_url'=>get_instance()->config->base_url().'accounting/dashboard',
+                        'app_icon_img'=>get_instance()->config->base_url().'libraries/img/ices/aryana_phone_book.png',
+                        'app_theme'=>'AdminLTE',
+                        'app_db_lock_name'=>'accounting',
                         'app_db_lock_limit'=>10,
                         'non_permission_controller'=>array(),
                         'app_info'=>''
@@ -33,7 +87,7 @@ class ICES_Engine {
                     //</editor-fold>
                 ),
                 'active'=>true
-            ),            
+            ),
         );
         
         self::$app_list = array(

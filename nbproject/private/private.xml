@@ -14,8 +14,13 @@
         <group name="JAVA"/>
         <group/>
         <group name="ARYANA-APP">
+            <file>file:/D:/htdocs/smartselling/ices_app/controllers/ices/sign_in.php</file>
+            <file>file:/D:/htdocs/smartselling/ices_app/helpers/ices/ices/ices_engine_helper.php</file>
+            <file>file:/D:/htdocs/smartselling/ices_app/views/ices/home/home_js.php</file>
+            <file>file:/D:/htdocs/smartselling/ices_app/views/ices/home/home_.php</file>
             <file>file:/D:/htdocs/smartselling/ices_app/helpers/ices/security_menu/security_menu_engine_helper.php</file>
             <file>file:/D:/htdocs/smartselling/ices_app/views/ices/home/home.php</file>
+            <file>file:/D:/htdocs/smartselling/ices_app/helpers/ices/security/security_engine_helper.php</file>
         </group>
     </open-files>
 </project-private>
