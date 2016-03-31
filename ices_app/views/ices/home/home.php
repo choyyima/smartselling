@@ -48,11 +48,11 @@ $company = ICES_Engine::$company['val'];
         <section style="padding:100px 0px 0px 0px;" >
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 ">
+                    <div class="col-lg-12 ">
                         <div class="carousel-inner" role="listbox">
                                                
                         </div>
-                        <div class="alert alert-danger">
+<!--                        <div class="alert alert-danger">
                             <div class="media">
                                 <div class="pull-left">
                                     <img src="<?php echo $lib_root ?>img/admin.png" class="img-responsive" />
@@ -63,7 +63,7 @@ $company = ICES_Engine::$company['val'];
                                     <a href="index-user.html" class="btn btn-danger " target="_blank">Login</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
 <!--
                     <div class="col-lg-6 ">
