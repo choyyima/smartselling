@@ -1,102 +1,75 @@
 <?php
-$lib_root = $this->config->base_url() . "libraries/assets/";
-$lib = $this->config->base_url() . "libraries/";
+$lib_root = $this->config->base_url() . "libraries/";
 $img_link_style = 'float:left;width:25px;height:25px';
 $ices_base_url = $this->config->base_url() . 'ices/';
 $company = ICES_Engine::$company['val'];
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <!--<![endif]-->
+<html>
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <!--[if IE]>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-            <![endif]-->
-        <title>Resto Admin</title>
-        <!-- BOOTSTRAP CORE STYLE CSS -->
-        <link rel="icon" href="<?php echo $lib_root ?>img/favicon-32x32.png">
-        <link href="<?php echo $lib_root ?>css/bootstrap.css" rel="stylesheet" />
-        <!-- FONT AWESOME CSS -->
-        <link href="<?php echo $lib_root ?>css/font-awesome.min.css" rel="stylesheet" />
-        <!-- CUSTOM STYLE CSS -->
-        <link href="<?php echo $lib_root ?>css/style.css" rel="stylesheet" />
-        <!-- Google	Fonts -->
-        <!--<link href="<?php echo $lib_root ?>css/style.css" rel='stylesheet' type='text/css' />-->
-        <link href='<?php echo $lib_root ?>css/fonts.css' rel='stylesheet' type='text/css' />
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="robots" content="noindex,nofollow">
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' >
+        <?php echo '<title>Integrated & Computerized Enterprise System</title>';
+        ?>
+        <link rel="icon" href="<?php echo $lib_root ?>img/ices/system.png">
+        <link href="<?php echo $lib_root ?>css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $lib_root ?>css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $lib_root; ?>css/adminLTE/adminLTE.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $lib_root; ?>css/adminLTE/adminLTE_ext.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo $lib_root; ?>css/ices/style.css" rel="stylesheet" type="text/css" />
+
+
     </head>
-    <body>
-        <div id="head">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-12">
-                        <h2><i class="fa fa-cutlery"></i> Sistem <span><i> Smart Selling</i></span>Restoran</h2>
+    <body >
+        <section>
+            <div class="container_12" id="content">
+                <div style="position:absolute;top:0px;right:0px;height:50px;width:285px">
+                    <div class="navbar-right" >
+                        <ul style="margin-top:25px;margin-right:25px;">
+                            <li class="dropdown user user-menu" style="display:none;text-align:right">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#ffffff;font-size:16px">
+                                    <i class="glyphicon glyphicon-user"></i>
+                                    <span fullname></span><i class="caret"></i>
+                                </a>
+                                <ul class="dropdown-menu" style="width:280px;padding: 1px 0 0 0;;
+                                    border-top-width: 0;">
+                                    <li class="" style="max-height:150px;padding: 10px;
+                                        background: #6aa3c0;
+                                        text-align: center;">
+                                        <img style="border-radius: 50%;width: 90px;
+                                             border: 8px solid;border-color: rgba(255, 255, 255, 0.2);"src="<?php echo get_instance()->config->base_url(); ?>/libraries/img/avatar.png" class="" alt="User Image">
+                                        <p style="color: rgba(255, 255, 255, 1);
+                                           font-size: 17px;
+                                           text-shadow: 2px 2px 3px #333333;
+                                           margin-top: 10px;" fullname>                                                              
+                                        </p>
+                                    </li>
+                                    <li class="" style="background-color: #f9f9f9;
+                                        padding: 10px;height:50px">                            
+                                        <div class="pull-left">
+                                            <a href="<?php echo $ices_base_url . 'u_profile/index/'; ?>" class="btn btn-default btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="<?php echo $ices_base_url . 'sign_in/sign_out'; ?>" class="btn btn-default btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
-            </div>
-        </div>
-        <section style="padding:100px 0px 0px 0px;" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 ">
+                <h1 style="font-family: Adobe Caslon Pro;font-weight:normal;">
+                    <?php echo 'Integrated & Computerized Enterprise System  (ICES)';
+                    ?>
+                </h1>
+                <h3>fast, precise, reliable </h3>
+                <div class="main" style="margin-top:80px">
+                    <div class='carousel slide'>
                         <div class="carousel-inner" role="listbox">
-                                               
-                        </div>
-<!--                        <div class="alert alert-danger">
-                            <div class="media">
-                                <div class="pull-left">
-                                    <img src="<?php echo $lib_root ?>img/admin.png" class="img-responsive" />
-                                </div>
-                                <div class="media-body">
-                                    <h3 class="media-heading">Accounting Login</h3>
-
-                                    <a href="index-user.html" class="btn btn-danger " target="_blank">Login</a>
-                                </div>
-                            </div>
-                        </div>-->
+                        </div>                        
                     </div>
-<!--
-                    <div class="col-lg-6 ">
-                        <div class="alert alert-warning">
-                            <div class="media">
-                                <div class="pull-right">
-                                    <img src="<?php echo $lib_root ?>img/admin.png" class="img-responsive" />
-                                </div>
-                                <div class="media-body">
-                                    <h3 class="media-heading">Cashier Login</h3>
-
-                                    <a href="index-admin.html" class="btn btn-primary" target="_blank" >Login</a>
-                                </div>
-                            </div>                   
-                        </div>
-                        <div class="alert alert-success">
-                            <div class="media">
-                                <div class="pull-right">
-                                    <img src="<?php echo $lib_root ?>img/admin.png" class="img-responsive" />
-                                </div>
-                                <div class="media-body">
-                                    <h3 class="media-heading">Management Login</h3>
-                                    <p></p>
-                                    <a href="index-user.html" class="btn btn-danger " target="_blank">Login</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-
                 </div>
             </div>
-
-        </section>
 
             <div class="modal fade" id="modal_sign_in" tabindex="" role="dialog" aria-hidden="false" style="display: none;overflow-y:auto">
                 <div class="modal-dialog">
@@ -166,15 +139,22 @@ $company = ICES_Engine::$company['val'];
                     </div>
                 </div>
             </div>
+        </section>
 
-
-
-        <!--  Jquery Core Script -->
-        <script type="text/javascript" src="<?php echo $lib; ?>js/jquery.min.js"></script>
-        <script type="text/javascript" src="<?php echo $lib; ?>js/jquery-ui.js"></script>
-        <script type="text/javascript" src="<?php echo $lib; ?>js/jquery.actual.min.js"></script>
-        <script src="<?php echo $lib ?>js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="<?php echo $lib ?>js/ices/ices.js" type="text/javascript"></script>
-
+        <div style="">
+            <p style="text-align:center;color:#2a6888">
+                <?php echo 'ICES v1.0 - 2015';
+                ?>
+            </p>
+        </div>
     </body>
+
+
+    <script type="text/javascript" src="<?php echo $lib_root; ?>js/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo $lib_root; ?>js/jquery-ui.js"></script>
+    <script type="text/javascript" src="<?php echo $lib_root; ?>js/jquery.actual.min.js"></script>
+    <script src="<?php echo $lib_root ?>js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="<?php echo $lib_root ?>js/ices/ices.js" type="text/javascript"></script>
+    <script src="<?php echo $lib_root ?>js/AdminLTE/pace.js" type="text/javascript"></script>
+
 </html>
