@@ -25,7 +25,7 @@ $company = ICES_Engine::$company['val'];
             <div class="container_12" id="content">
                 <div style="position:absolute;top:0px;right:0px;height:50px;width:285px">
                     <div class="navbar-right" >
-                        <ul style="margin-top:25px;margin-right:25px;">
+                        <ul style="margin-top:0px;margin-right:25px;">
                             <li class="dropdown user user-menu" style="display:none;text-align:right">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#ffffff;font-size:16px">
                                     <i class="glyphicon glyphicon-user"></i>
@@ -58,12 +58,12 @@ $company = ICES_Engine::$company['val'];
                         </ul>
                     </div>
                 </div>
-                <h1 style="font-family: Adobe Caslon Pro;font-weight:normal;">
-                    <?php echo 'Integrated & Computerized Enterprise System  (ICES)';
-                    ?>
-                </h1>
-                <h3>fast, precise, reliable </h3>
-                <div class="main" style="margin-top:80px">
+                <!--                <h1 style="font-family: Adobe Caslon Pro;font-weight:normal;">
+                <?php echo 'Integrated & Computerized Enterprise System  (ICES)';
+                ?>
+                                </h1>
+                                <h3>fast, precise, reliable </h3>-->
+                <div class="main" style="margin-top:0px">
                     <div class='carousel slide'>
                         <div class="carousel-inner" role="listbox">
                         </div>                        
@@ -75,7 +75,7 @@ $company = ICES_Engine::$company['val'];
                 <div class="modal-dialog">
                     <div class="modal-content" style="">
 
-                        <div class="modal-body" style="background-color:#6aa3c0;padding:1px;
+                        <div class="modal-body" style="background-color:#197b30;padding:1px;
                              border-top-left-radius: 4px;
                              border-top-right-radius: 4px;
                              border-bottom-right-radius: 4px;
@@ -86,21 +86,22 @@ $company = ICES_Engine::$company['val'];
                                      border-bottom-right-radius: 0;
                                      border-bottom-left-radius: 0;
 
-                                     background: #3d9970;
+                                     background: #197b30;
                                      box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.2);
                                      padding: 20px 10px;
                                      text-align: center;
                                      font-size: 26px;
                                      font-weight: 300;
                                      color: #fff;
-                                     background-color:#3c8dbc">
+                                     background-color:#197b30">
                                     SIGN IN
                                 </div>
                                 <form action="" method="post">
-                                    <div class="" 
-                                         style="padding: 10px 20px;
-                                         background: #fff;
-                                         color: #444;background-color: #eaeaec !important;">
+
+                                    <div class="" style="padding: 10px 20px;background: #fff;color: #444;background-color: #eaeaec !important;">
+                                        <div class="form-group">
+                                            <strong id="login_msg" style="color:#f56954; font-size: 11px; " class=""></strong>
+                                        </div>
                                         <div class="form-group">
                                             <div class="input-group">
                                                 <span class="input-group-addon">
@@ -117,10 +118,6 @@ $company = ICES_Engine::$company['val'];
                                                 <input type="password" name="password" class="form-control" placeholder="Password"/>
                                             </div>
                                         </div>          
-                                        <div class="form-group">
-                                            <strong id="login_msg" style="color:#f56954 " 
-                                                    class=""></strong>
-                                        </div>
                                     </div>
                                     <div class="" style="border-top-left-radius: 0;
                                          border-top-right-radius: 0;
@@ -129,8 +126,8 @@ $company = ICES_Engine::$company['val'];
                                          background: #fff;
                                          color: #444;">                                                               
                                         <button type="submit" class="btn btn-primary btn-block" style="
-                                                margin-bottom: 10px;background-color: #3c8dbc;
-                                                border-color: #6aa3c0;">Let me in</button>  
+                                                margin-bottom: 10px;background-color: #008d4c;
+                                                border-color: #008d4c;">Let me in</button>  
                                     </div>
                                 </form>            
                             </div>
@@ -141,12 +138,12 @@ $company = ICES_Engine::$company['val'];
             </div>
         </section>
 
-        <div style="">
-            <p style="text-align:center;color:#2a6888">
-                <?php echo 'ICES v1.0 - 2015';
-                ?>
-            </p>
-        </div>
+        <!--        <div style="">
+                    <p style="text-align:center;color:#2a6888">
+        <?php echo 'ICES v1.0 - 2015';
+        ?>
+                    </p>
+                </div>-->
     </body>
 
 

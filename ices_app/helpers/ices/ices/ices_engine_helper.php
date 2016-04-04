@@ -84,6 +84,42 @@ class ICES_Engine {
                         'non_permission_controller'=>array(),
                         'app_info'=>''
                     ),
+                    
+                    array(
+                        'val'=>'kitchen',
+                        'text'=>'Kitchen',
+                        'dev_text'=>'Kitchen',
+                        'short_name'=>'Kitchen',
+                        'app_base_url'=>get_instance()->config->base_url().'kitchen/',
+                        'app_base_dir'=>'kitchen/',
+                        'app_db_conn_name'=>'kitchen',
+                        'app_translate'=>false,
+                        'app_default_url'=>get_instance()->config->base_url().'kitchen/dashboard',
+                        'app_icon_img'=>get_instance()->config->base_url().'libraries/img/ices/aryana_phone_book.png',
+                        'app_theme'=>'AdminLTE',
+                        'app_db_lock_name'=>'kitchen',
+                        'app_db_lock_limit'=>10,
+                        'non_permission_controller'=>array(),
+                        'app_info'=>''
+                    ),
+                    
+                    array(
+                        'val'=>'waiters',
+                        'text'=>'Waiters',
+                        'dev_text'=>'Waiters',
+                        'short_name'=>'Waiters',
+                        'app_base_url'=>get_instance()->config->base_url().'waiters/',
+                        'app_base_dir'=>'waiters/',
+                        'app_db_conn_name'=>'waiters',
+                        'app_translate'=>false,
+                        'app_default_url'=>get_instance()->config->base_url().'waiters/dashboard',
+                        'app_icon_img'=>get_instance()->config->base_url().'libraries/img/ices/aryana_phone_book.png',
+                        'app_theme'=>'AdminLTE',
+                        'app_db_lock_name'=>'waiters',
+                        'app_db_lock_limit'=>10,
+                        'non_permission_controller'=>array(),
+                        'app_info'=>''
+                    ),
                     //</editor-fold>
                 ),
                 'active'=>true

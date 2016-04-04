@@ -39,9 +39,9 @@ class Sign_In extends MY_Extended_Controller {
             }
             else{
                 $success = 0;
-                $msg = 'Invalid username / password';
+                $msg = "The username and password you entered don't match";
             }
-            $response['username_pwd_match'] = $username_pwd_match;
+            $response["username_pwd_match"] = $username_pwd_match;
         }
         else{         
             $success = 0;
