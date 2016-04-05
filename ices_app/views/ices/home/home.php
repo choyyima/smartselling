@@ -65,13 +65,12 @@ $company = ICES_Engine::$company['val'];
                                 <h3>fast, precise, reliable </h3>-->
                 <div class="main" style="margin-top:0px">
                     <div class='carousel slide'>
-                        <div class="carousel-inner" role="listbox">
-                        </div>                        
+                        <div class="carousel-inner" role="listbox"></div>                        
                     </div>
                 </div>
             </div>
 
-            <div class="modal fade" id="modal_sign_in" tabindex="" role="dialog" aria-hidden="false" style="display: none;overflow-y:auto">
+            <div class="modal fade " id="modal_sign_in" tabindex="" role="dialog" aria-hidden="false" style="display: none;overflow-y:auto">
                 <div class="modal-dialog">
                     <div class="modal-content" style="">
 
