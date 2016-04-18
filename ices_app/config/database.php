@@ -102,6 +102,21 @@ $db['aryana_phone_book']['autoinit'] = TRUE;
 $db['aryana_phone_book']['stricton'] = FALSE;
 $db['aryana_phone_book']['port'] = 3306;
 
-
+$db['management']['hostname'] = 'localhost';
+$db['management']['username'] = 'ices';
+$db['management']['password'] = 'Ices123';
+$db['management']['database'] = 'aryana_phone_book_db';
+$db['management']['dbdriver'] = 'mysqli';
+$db['management']['dbprefix'] = '';
+$db['management']['pconnect'] = FALSE;
+$db['management']['db_debug'] = FALSE;
+$db['management']['cache_on'] = FALSE;
+$db['management']['cachedir'] = '';
+$db['management']['char_set'] = 'utf8';
+$db['management']['dbcollat'] = 'utf8_general_ci';
+$db['management']['swap_pre'] = '';
+$db['management']['autoinit'] = TRUE;
+$db['management']['stricton'] = FALSE;
+$db['management']['port'] = 3306;
 /* End of file database.php */
 /* Location: ./application/config/database.php */

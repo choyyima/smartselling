@@ -398,6 +398,72 @@ class Security_Menu_Engine {
             )
                 //</editor-fold>
         );
+        
+        $management_app_base_url = SI::type_get('ICES_Engine', 'management', '$app_list')['app_base_url'];
+        self::$menu_list['management'] = array(
+            //<editor-fold defaultstate="collapsed" desc="ices menu">
+            Lang::get("Dashboard") => array(
+                'id' => 'd'
+                , "properties" => array(
+                    "class" => "fa fa-dashboard"
+                )
+                , "ref" => $management_app_base_url . "dashboard"
+            ),
+            Lang::get("Master") => array(
+                'id' => 'm'
+                , "properties" => array(
+                    "class" => 'fa fa-th'
+                )
+                , "ref" => "#"
+                , "child" => array(
+                    Lang::get("Contact Cagetory") => array(
+                        'id' => 'm_cc'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $management_app_base_url . "contact_category"
+                    ),
+                    Lang::get("Phone Number Type") => array(
+                        'id' => 'm_pnt'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $management_app_base_url . "phone_number_type"
+                    ),
+                    Lang::get("Company") => array(
+                        'id' => 'm_cpn'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $management_app_base_url . "company"
+                    ), 
+                    
+                )
+            ),
+            Lang::get("List") => array(
+                'id' => 'l'
+                , "properties" => array(
+                    "class" => 'fa fa-list-alt'
+                )
+                , "ref" => "#"
+                , "child" => array(
+                    Lang::get("Contact") => array(
+                        'id' => 'l_c'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $management_app_base_url . "contact"
+                    ),
+                )
+            ),
+            Lang::get("Activity") => array(
+                'id' => 'a'
+                , "properties" => array(
+                    "class" => 'fa fa-child'
+                )
+                , "ref" => "#"
+                , "child" => array(
+                    Lang::get("Contact") => array(
+                        'id' => 'a_c'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $management_app_base_url . "contact/add"
+                    ),
+                )
+            ),
+                //</editor-fold>
+        );
 
         //</editor-fold>
     }
