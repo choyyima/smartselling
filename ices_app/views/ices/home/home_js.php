@@ -5,7 +5,7 @@
 
             if (iUser_Info.user_id !== '') {
                 $('[fullname]').html(iUser_Info.name);
-                $('li.dropdown.user.user-menu').show();
+                $('li.dropdown.user.user-menu').hide();
             }
         }
 
@@ -36,7 +36,7 @@
         var lib_root = '<?php echo $this->config->base_url() . "libraries/" ?>';
 //        var img_link_style = 'float:left;width:25px;height:25px';
         var lbase_url = '<?php echo $this->config->base_url() ?>';
-        var lapp_to_show = 7;
+        var lapp_to_show = 2;
 
         var lapp_list = [
 <?php foreach (ICES_Engine::$app_list as $idx => $row) { ?>
@@ -68,9 +68,10 @@
 
         ];
 
-        var lapp_to_show = 7;
+        var lapp_to_show = 1;
 //        var lcomp_width = 230;
-        var lcomp_width = 200;
+        var lcomp_width = 'auto';
+        
         var home_draw_application = function (lapp_arr) {
             $.each(lapp_arr, function (lidx, lrow) {
                 var lcomp = $(lapp_list[lrow].html);

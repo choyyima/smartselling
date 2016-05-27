@@ -16,7 +16,6 @@ class Dashboard extends Dashboard_Parent {
 
     function __construct() {
         parent::__construct();
-        
     }
 
 }

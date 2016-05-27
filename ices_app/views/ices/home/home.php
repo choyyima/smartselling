@@ -44,7 +44,7 @@ $company = ICES_Engine::$company['val'];
                                            margin-top: 10px;" fullname>                                                              
                                         </p>
                                     </li>
-                                    <li class="" style="background-color: #f9f9f9;
+<!--                                    <li class="" style="background-color: #f9f9f9;
                                         padding: 10px;height:50px">                            
                                         <div class="pull-left">
                                             <a href="<?php echo $ices_base_url . 'u_profile/index/'; ?>" class="btn btn-default btn-flat">Profile</a>
@@ -52,17 +52,17 @@ $company = ICES_Engine::$company['val'];
                                         <div class="pull-right">
                                             <a href="<?php echo $ices_base_url . 'sign_in/sign_out'; ?>" class="btn btn-default btn-flat">Sign out</a>
                                         </div>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <!--                <h1 style="font-family: Adobe Caslon Pro;font-weight:normal;">
-                <?php echo 'Integrated & Computerized Enterprise System  (ICES)';
-                ?>
-                                </h1>
-                                <h3>fast, precise, reliable </h3>-->
+                <h1 style="font-family: Adobe Caslon Pro;font-weight:normal;">
+                    <?php echo 'Integrated & Computerized Restaurant System (ICES)';
+                    ?>
+                </h1>
+                <h3>fast, precise, reliable </h3>
                 <div class="main" style="margin-top:0px">
                     <div class='carousel slide'>
                         <div class="carousel-inner" role="listbox"></div>                        
@@ -139,7 +139,7 @@ $company = ICES_Engine::$company['val'];
 
         <!--        <div style="">
                     <p style="text-align:center;color:#2a6888">
-        <?php echo 'ICES v1.0 - 2015';
+        <?php // echo 'ICES v1.0 - 2015';
         ?>
                     </p>
                 </div>-->

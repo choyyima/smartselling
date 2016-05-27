@@ -21,7 +21,7 @@ $base_url = SI::type_get('ICES_Engine', 'ices', '$app_list')['app_base_url'];
         <div class="navbar-right">
             <ul class="nav navbar-nav">
                 <!-- Messages: style can be found in dropdown.less-->
-                <li class="dropdown messages-menu">
+                <li class="dropdown messages-menu" style="display: none">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope"></i>
                         <span class="label label-success" id="message_nav_number"></span>
@@ -39,7 +39,7 @@ $base_url = SI::type_get('ICES_Engine', 'ices', '$app_list')['app_base_url'];
                     </ul>
                 </li>
                 <!-- Notifications: style can be found in dropdown.less -->
-                <li id="notification" class="dropdown notifications-menu">
+                <li id="notification" class="dropdown notifications-menu"style="display: none">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-warning"></i>
                         <span class="label label-warning" id="notification_number"></span>
