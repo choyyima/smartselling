@@ -21,10 +21,34 @@ class Security_Menu_Engine {
                 )
                 , "ref" => $ices_app_base_url . "dashboard"
             ),
-            Lang::get("Master") => array(
-                'id' => 'm'
+            Lang::get("Inventory") => array(
+                'id' => 'i'
                 , "properties" => array(
                     "class" => 'fa fa-th'
+                )
+                , "ref" => "#"
+                , "child" => array(
+                    Lang::get("Master") => array(
+                        'id' => 'm'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "Master"
+                    ),
+                    Lang::get("Transaksi") => array(
+                        'id' => 't'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "transaksi"
+                    ),
+                    Lang::get("Detail Transaksi") => array(
+                        'id' => 'd'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "detail_transaksi"
+                    ),
+                )
+            ),
+            Lang::get("POS (Point Of Sales") => array(
+                'id' => 'm'
+                , "properties" => array(
+                    "class" => 'fa fa-calculator'
                 )
                 , "ref" => "#"
                 , "child" => array(
@@ -32,6 +56,64 @@ class Security_Menu_Engine {
                         'id' => 'm'
                         , "properties" => array("class" => "fa fa-th")
                         , "ref" => $ices_app_base_url . "menu"
+                    ),
+                    Lang::get("Customer") => array(
+                        'id' => 'c'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "Customer"
+                    ),
+                    Lang::get("Order") => array(
+                        'id' => 'o'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "order"
+                    ),
+                    Lang::get("Detail Order") => array(
+                        'id' => 'd_o'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "detail_order"
+                    ),
+                    Lang::get("Category") => array(
+                        'id' => 'cat'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "category"
+                    ),
+                )
+            ),
+            Lang::get("Reservation") => array(
+                'id' => 'r'
+                , "properties" => array(
+                    "class" => 'fa fa-list-alt'
+                )
+                , "ref" => "#"
+                , "child" => array(
+                    Lang::get("Table") => array(
+                        'id' => 'tb'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "table"
+                    ),
+                    Lang::get("Reservasi") => array(
+                        'id' => 'rv'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "resevasi"
+                    ),
+                )
+            ),
+            Lang::get("Work Order") => array(
+                'id' => 'w_o'
+                , "properties" => array(
+                    "class" => 'fa fa-cutlery'
+                )
+                , "ref" => "#"
+                , "child" => array(
+                    Lang::get("PIC") => array(
+                        'id' => 'tb'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "pic"
+                    ),
+                    Lang::get("Work Order") => array(
+                        'id' => 'wo'
+                        , "properties" => array("class" => "fa fa-th")
+                        , "ref" => $ices_app_base_url . "work_order"
                     ),
                 )
             ),
